@@ -14,6 +14,7 @@ namespace MyImpenetrableSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             // Create a SqlConnection object
             SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["MISConnectionString"].ToString());
 
@@ -75,5 +76,6 @@ namespace MyImpenetrableSite
             conn.Close();
             lblUsersList.Text = sb.ToString();
         }
+            
     }
 }

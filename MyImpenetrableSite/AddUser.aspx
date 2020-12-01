@@ -11,7 +11,10 @@
             First Name:
         </div>
         <div class="col-md-9">
-            <input type="text" name="txtFirstName" class="form-control" />
+            <!-- <input type="text" name="txtFirstName" class="form-control" /> -->
+
+            <asp:TextBox ID="txtFirstName" runat="server" CssClass="form-control"></asp:TextBox>
+
         </div>
     </div>
     <div class="row">&nbsp;</div>

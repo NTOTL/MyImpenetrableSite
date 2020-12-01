@@ -22,7 +22,8 @@ namespace MyImpenetrableSite
             SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["MISConnectionString"].ToString());
 
             // Autogenerate a username
-            string firstName = Request.Form["txtFirstName"].ToString().Trim();
+            //string firstName = Request.Form["txtFirstName"].ToString().Trim();
+            string firstName = txtFirstName.Text.Trim();
             string lastName = txtLastName.Text.Trim();
             string username = firstName[0].ToString().ToLower() + lastName.ToLower();
             string password = firstName + "." + lastName;
